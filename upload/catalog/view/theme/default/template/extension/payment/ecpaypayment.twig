@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center">{{ text_title }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-right" style="width:25%;"><strong>{{ entry_payment_method }}</strong></td>
+                <td class="text-left" style="width:75%;">{{ chosen_payemnt }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</div>
+<div class="buttons">
+    <div class="pull-right">
+        <input type="button" value="{{ text_checkout_button }}" id="{{ id_prefix }}-checkout-button" class="btn btn-primary" onclick="location.href='{{ redirect_url }}';"/>
+    </div>
+</div>
